@@ -1,0 +1,46 @@
+.media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 60px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__body {
+    width: 50%;
+  }
+  &__img {
+    width: 50%;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &-reverse {
+    flex-direction: row-reverse
+  }
+  &__title {
+    color: $dark_gray;
+    font-size: 180%;
+    line-height: 1.4;
+
+    &-sub {
+      margin-bottom: 30px;
+      font-size: 130%;
+    }
+    &-sub-thin {
+      font-weight: 200;
+    }
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+  &__list {
+    margin-bottom: 30px;
+  }
+}

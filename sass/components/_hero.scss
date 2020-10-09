@@ -1,0 +1,54 @@
+.hero {
+  width: 100%;
+  padding-bottom: 50px;
+  background-image: url(../images/wc-home-main-banner4-alt.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+
+  &-main {
+    padding: 120px 0;
+
+    &__text {
+      line-height: 1.6;
+      font-size: 250%;
+      font-weight: 200;
+    }
+  }
+
+  &-service {
+
+    &__inner {
+      display: flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      align-items:flex-start;      
+    }
+    &__item {
+      width: calc(25% - 100px / 4);
+      margin-right: 10px;
+      display: flex;
+      flex-direction: column;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__link {
+      color: $orange;
+
+      &:hover,
+      &:focus {
+        color: $blue;
+      }
+    }
+    &__title {
+      font-size: 140%;
+      font-weight: 200;
+    }
+    &__text {
+      margin-top: auto;
+    }    
+  }
+}
