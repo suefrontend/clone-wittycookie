@@ -1,5 +1,17 @@
-@mixin mq($breakpoint: sp) {
-	@media #{map-get($breakpoints, $breakpoint)} {
-		@content;
+@mixin respond($breakpoint) {
+	@if $breakpoint == pc-normal {
+		@media only screen and (min-width: $pc-normal) and (max-width: $pc-large) {
+			@content;
+		}
+	}
+	@if $breakpoint == tablet {
+		@media only screen and (min-width: $tablet) and (max-width: $pc-normal - 1px) {
+			@content;
+		}
+	}
+	@if $breakpoint == mobile {
+		@media only screen and (max-width: $sp) {
+			@content;
+		}
 	}
 }
