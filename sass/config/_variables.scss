@@ -1,0 +1,10 @@
+$layout-width-inner-large: 1240px;
+$layout-width-inner: 970px;
+
+$breakpoints: (
+	'large': 'screen and (min-width: #{$layout-width-inner-l})',
+	'normal':
+		'screen and (min-width: #{$layout-width-inner-l  - 1px}) and (max-width: #{$layout-width-inner})',
+	'tab': 'screen and (max-width: #{$layout-width-inner - 1px})',
+	'sp': 'screen and (max-width: 767px)',
+);
