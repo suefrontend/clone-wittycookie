@@ -1,6 +1,6 @@
 @mixin respond($breakpoint) {
 	@if $breakpoint == pc-normal {
-		@media only screen and (min-width: $pc-normal) and (max-width: $pc-large) {
+		@media only screen and (min-width: $pc-normal) and (max-width: $pc-large - 1px) {
 			@content;
 		}
 	}
