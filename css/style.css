@@ -5020,47 +5020,8 @@ input {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
-  .cards-col2 > .cards__item {
+  .cards-col2 .cards__item {
     width: calc(50% - 40px / 2); }
-  .cards__item {
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.07);
-    box-sizing: border-box;
-    margin-bottom: 40px;
-    border-radius: 5px; }
-  .cards__img {
-    margin: 0;
-    width: 40%;
-    height: 300px;
-    display: flex;
-    overflow: hidden;
-    z-index: 1; }
-    .cards__img img {
-      display: block;
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      clip-path: circle(240px at right);
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px;
-      z-index: 1; }
-  .cards__body {
-    display: flex;
-    align-items: center;
-    width: 60%;
-    box-sizing: border-box;
-    padding: 0 30px; }
-  .cards__bio {
-    margin-bottom: 35px; }
-    .cards__bio-name {
-      font-size: 140%;
-      color: #1f1f1f;
-      line-height: 0;
-      margin-bottom: 25px; }
-    .cards__bio-company {
-      line-height: 0; }
 
 .topbar__inner {
   display: flex;
