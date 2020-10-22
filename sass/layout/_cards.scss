@@ -24,18 +24,18 @@
     display: flex;
     overflow: hidden;
     z-index: 1;
-
-    .clipped-image-circle {
-      display: block;
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      clip-path: circle(240px at right);
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px;
-      z-index: 1;
-    }
   }
+  .clipped-image-circle {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    clip-path: circle(240px at right);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 1;
+  }
+
   &__body {
     display: flex;
     align-items: center;
