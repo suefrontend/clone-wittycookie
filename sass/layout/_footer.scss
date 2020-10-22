@@ -9,7 +9,7 @@
   .upper-footer {
     background-color: #252525;
     padding: 40px 0;
-   
+
     &-title {
       font-weight: bold;
     }
@@ -33,15 +33,14 @@
       &__item {
         display: inline;
         margin-right: 20px;
-        
+
         &:last-child {
           margin-right: 0;
         }
       }
       &__link {
-
         i {
-          transition: .3s;
+          transition: 0.3s;
           font-size: 18px;
         }
         &:hover i {
@@ -51,13 +50,12 @@
     }
     &__navigation__item {
       color: $white;
-      transition: .2s;
+      transition: 0.2s;
 
       &:hover {
         color: $orange;
       }
     }
-
   }
 
   .lower-footer {
@@ -81,11 +79,10 @@
       &:last-child {
         margin-right: 0;
       }
-
     }
     &__navigation__link {
       color: $white;
-      transition: .3s;
+      transition: 0.3s;
 
       &:hover {
         color: $orange;

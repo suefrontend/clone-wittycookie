@@ -1,188 +1,188 @@
 .topbar__inner {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px 0 20px 0;
-	font-size: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 20px 0;
+  font-size: 80%;
 }
 .topbar__form {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 
-	i:hover {
-		cursor: pointer;
-	}
+  i:hover {
+    cursor: pointer;
+  }
 }
 .topbar__form-text {
-	margin-right: 20px;
+  margin-right: 20px;
 }
 .topbar__form-input {
-	span {
-		position: relative;
-	}
-	i {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		right: 10px;
-		color: $dark_gray;
-	}
+  span {
+    position: relative;
+  }
+  i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: $dark_gray;
+  }
 }
 
 .menubar__inner {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .menubar-bg-white {
-	background-color: $white;
+  background-color: $white;
 
-	.nav__link {
-		color: $dark_gray;
-	}
-	.second__has-items:before {
-		color: $dark_gray;
-	}
+  .nav__link {
+    color: $dark_gray;
+  }
+  .second__has-items:before {
+    color: $dark_gray;
+  }
 }
 
 .header-nav {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 .nav__items {
-	display: flex;
+  display: flex;
 }
 .nav__link {
-	color: $white;
-	padding-right: 14px;
+  color: $white;
+  padding-right: 14px;
 }
 .nav__item {
-	margin-right: 25px;
-	position: relative;
+  margin-right: 25px;
+  position: relative;
 }
 .has-items {
-	position: relative;
+  position: relative;
 
-	&:before {
-		content: '\f107';
-		font-family: 'Font Awesome 5 Free';
-		font-weight: 900;
-		position: absolute;
-		top: 2px;
-		right: 0;
-		color: inherit;
-	}
+  &:before {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    color: inherit;
+  }
 
-	&:hover {
-		.second {
-			opacity: 1;
-			visibility: visible;
-			transform: translateY(-10px);
-		}
-	}
+  &:hover {
+    .second {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-10px);
+    }
+  }
 }
 .second {
-	position: relative;
-	opacity: 0;
-	visibility: hidden;
-	transition: all 350ms ease-in-out;
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 350ms ease-in-out;
 }
 .second__wrapper {
-	background-color: #fff;
-	border-radius: 3px;
-	padding: 20px;
-	position: absolute;
-	top: 30px;
-	right: 0;
-	min-width: 150px;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 20px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  min-width: 150px;
 }
 .second__item {
-	padding-bottom: 15px;
+  padding-bottom: 15px;
 
-	&:last-of-type {
-		padding-bottom: 0;
-	}
+  &:last-of-type {
+    padding-bottom: 0;
+  }
 }
 .second__link {
-	display: block;
-	color: $dark_gray;
-	transition: 0.2s;
+  display: block;
+  color: $dark_gray;
+  transition: 0.2s;
 
-	&:hover {
-		color: $pink;
-	}
+  &:hover {
+    color: $pink;
+  }
 }
 .second__has-items {
-	position: relative;
+  position: relative;
 
-	&:before {
-		content: '\f105';
-		font-family: 'Font Awesome 5 Free';
-		font-weight: 900;
-		position: absolute;
-		top: 2px;
-		right: 15px;
-		color: $base;
-	}
-	&:hover {
-		.third {
-			opacity: 1;
-			visibility: visible;
-			transform: translateY(-10px);
-		}
-	}
+  &:before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    color: $base;
+  }
+  &:hover {
+    .third {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-10px);
+    }
+  }
 }
 
 .third {
-	position: relative;
-	opacity: 0;
-	visibility: hidden;
-	transition: all 350ms ease-in-out;
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 350ms ease-in-out;
 }
 .third__wrapper {
-	position: absolute;
-	min-width: 180px;
-	bottom: -60px;
-	right: -210px;
-	background-color: #fff;
-	border-radius: 3px;
-	padding: 20px;
-	box-shadow: 0 5px 40px rgba(0, 0, 0, 0.07);
+  position: absolute;
+  min-width: 180px;
+  bottom: -60px;
+  right: -210px;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 20px;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.07);
 }
 .third__item {
-	padding-bottom: 15px;
+  padding-bottom: 15px;
 
-	&:last-child {
-		padding-bottom: 0;
-		position: relative;
-	}
+  &:last-child {
+    padding-bottom: 0;
+    position: relative;
+  }
 }
 .third__link {
-	display: block;
-	color: $dark_gray;
-	transition: 0.2s;
+  display: block;
+  color: $dark_gray;
+  transition: 0.2s;
 
-	&:hover {
-		color: $pink;
-	}
+  &:hover {
+    color: $pink;
+  }
 }
 
 /* White Header */
 .menubar {
-	&-bg-white {
-		background-color: $white;
+  &-bg-white {
+    background-color: $white;
 
-		.header-nav .nav__link {
-			color: $dark_gray;
-			transition: 0.3s;
+    .header-nav .nav__link {
+      color: $dark_gray;
+      transition: 0.3s;
 
-			&:hover,
-			&:hover:before {
-				color: $pink;
-			}
-		}
-		.header-nav__item-has-items::before {
-			color: $dark_gray;
-		}
-	}
+      &:hover,
+      &:hover:before {
+        color: $pink;
+      }
+    }
+    .header-nav__item-has-items::before {
+      color: $dark_gray;
+    }
+  }
 }

@@ -13,8 +13,7 @@ main {
 .section:first-of-type {
   padding-top: 0;
 }
-::selection
-{
-    background: $orange;
-    color: $white;
+::selection {
+  background: $orange;
+  color: $white;
 }
