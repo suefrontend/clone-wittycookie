@@ -1,3 +1,8 @@
+.topbar {
+  @include respond(normal) {
+    display: none;
+  }
+}
 .topbar__inner {
   display: flex;
   justify-content: space-between;
@@ -29,36 +34,79 @@
   }
 }
 
+.menubar {
+  @include respond(normal) {
+    background-color: $white;
+  }
+}
 .menubar__inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-.menubar-bg-white {
-  background-color: $white;
+  flex-wrap: nowrap;
 
-  .nav__link {
-    color: $dark_gray;
+  @include respond(large-desktop) {
+    width: $large-desktop;
   }
-  .second__has-items:before {
-    color: $dark_gray;
+
+  @include respond(normal) {
+    flex-direction: column;
+    padding: 15px;
   }
 }
+.menubar__logo {
+  @include respond(normal) {
+    color: $dark_gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 
+    i {
+      cursor: pointer;
+    }
+  }
+}
 .header-nav {
   display: flex;
   align-items: center;
+
+  @include respond(normal) {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 .nav__items {
   display: flex;
+
+  @include respond(normal) {
+    flex-direction: column;
+  }
 }
 .nav__link {
   color: $white;
   padding-right: 14px;
+  transition: 0.3s;
+
+  @include respond(normal) {
+    color: $dark_gray;
+    display: block;
+
+    &:hover {
+      color: $pink;
+    }
+  }
 }
 .nav__item {
   margin-right: 25px;
   position: relative;
+
+  @include respond(normal) {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
 }
 .has-items {
   position: relative;
@@ -67,10 +115,13 @@
     content: "\f107";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    position: absolute;
-    top: 2px;
-    right: 0;
     color: inherit;
+
+    @include respond(large-desktop) {
+      position: absolute;
+      top: 2px;
+      right: 0;
+    }
   }
 
   &:hover {
@@ -164,25 +215,5 @@
 
   &:hover {
     color: $pink;
-  }
-}
-
-/* White Header */
-.menubar {
-  &-bg-white {
-    background-color: $white;
-
-    .header-nav .nav__link {
-      color: $dark_gray;
-      transition: 0.3s;
-
-      &:hover,
-      &:hover:before {
-        color: $pink;
-      }
-    }
-    .header-nav__item-has-items::before {
-      color: $dark_gray;
-    }
   }
 }

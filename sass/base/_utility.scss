@@ -1,0 +1,12 @@
+.desktop-only {
+  @include respond(normal) {
+    display: none;
+  }
+}
+.sp-only {
+  display: none;
+
+  @include respond(normal) {
+    display: block;
+  }
+}

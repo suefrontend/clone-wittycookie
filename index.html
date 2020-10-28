@@ -28,13 +28,15 @@
         </div>
       </div>
 
-      <!-- スクロールして背景白の時のクラス -->
-      <!-- <div class="menubar menubar-bg-white"> -->
       <div class="menubar">
-        <div class="menubar__inner container">
-          <a href=""><img src="images/logo_white.png" alt="" class="header__logo"></a>
-          <!-- <a href=""><img src="images/logo_navy.png" alt="" class="header__logo-bg-white"></a> -->
-          <nav class="header-nav">
+        <div class="menubar__inner">
+          <div class="menubar__logo">
+            <a href="" class="desktop-only"><img src="images/logo_white.png" alt="" class="header__logo"></a>
+            <a href="" class="sp-only"><img src="images/logo_navy.png" alt="" ></a>
+            <span class="sp-only"><i class="fas fa-bars fa-lg"></i></span>
+          </div>
+          <div class="menubar__nav">
+          <nav class="header-nav desktop-only">
             <ul class="nav__items">
               <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
               <li class="nav__item has-items">
@@ -91,7 +93,9 @@
         <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
         </ul>
         <button class="btn btn-hover-float-orange">Get in touch</button>
-        </nav>
+      </nav>
+    </div>
+
       </div>
   </div>
   </header>
@@ -684,6 +688,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/app.js"></script>
 </body>
 
 </html>

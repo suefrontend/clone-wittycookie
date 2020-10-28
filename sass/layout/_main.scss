@@ -2,7 +2,13 @@
   width: $large-desktop;
   margin: 0 auto;
 
-  @include respond(desktop) {
+  @include respond(normal) {
     width: $desktop;
+  }
+  @include respond(tablet) {
+    width: $tablet;
+  }
+  @include respond(sp) {
+    width: $sp;
   }
 }
