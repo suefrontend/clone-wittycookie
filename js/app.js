@@ -2,8 +2,6 @@ window.addEventListener("scroll", function () {
   const fixedHeader = document.querySelector(".header");
   const topbar = document.querySelector(".topbar");
   const menubar = document.querySelector(".menubar");
-  const logoNavy = document.querySelector(".logo-navy");
-  const logoWhite = document.querySelector(".logo-white");
 
   fixedHeader.classList.toggle("fixed", window.scrollY > 0);
   topbar.classList.toggle("display-none", window.scrollY > 0);
