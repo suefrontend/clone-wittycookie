@@ -1,3 +1,26 @@
+header.fixed {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.05);
+}
+header .logo-navy {
+  display: none;
+
+  @include respond(normal) {
+    display: block !important;
+  }
+}
+header .logo-white {
+  @include respond(normal) {
+    display: none !important;
+  }
+}
+header.fixed .logo-navy {
+  display: block !important;
+}
+header.fixed .logo-white {
+  display: none;
+}
 .topbar {
   @include respond(normal) {
     display: none;
@@ -13,6 +36,7 @@
 .topbar__form {
   display: flex;
   align-items: center;
+  min-height: 20px;
 
   i:hover {
     cursor: pointer;
@@ -22,27 +46,72 @@
   margin-right: 20px;
 }
 .topbar__form-input {
-  span {
-    position: relative;
-  }
+  position: relative;
+
   i {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 10px;
     color: $dark_gray;
+    z-index: 200;
   }
+  .fa-search {
+    color: $white;
+  }
+  .fa-times {
+    color: $dark_gray;
+  }
+}
+.topbar__form-input input {
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+  width: 0;
+}
+.topbar__form-input input.active {
+  opacity: 1;
+  width: 250px;
 }
 
 .menubar {
+  transition: all 0.4s ease-in-out;
+
+  @include respond(normal) {
+    box-sizing: border-box;
+  }
+}
+.menubar .container {
+  @include respond(normal) {
+    width: 100%;
+  }
+}
+.menubar__nav {
   @include respond(normal) {
     background-color: $white;
+    -webkit-transform: translateY(-200%);
+    -moz-transform: translateY(-200%);
+    transform: translateY(-100%);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
   }
+}
+.expand-menu:checked ~ .menubar__nav {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .menubar__inner {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
+  align-items: center;
 
   @include respond(large-desktop) {
     width: $large-desktop;
@@ -50,7 +119,7 @@
 
   @include respond(normal) {
     flex-direction: column;
-    padding: 15px;
+    align-items: inherit;
   }
 }
 .menubar__logo {
@@ -59,7 +128,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    background: $white;
+    z-index: 50;
+    padding: 0 20px;
 
     i {
       cursor: pointer;
@@ -90,6 +161,7 @@
   @include respond(normal) {
     color: $dark_gray;
     display: block;
+    padding-bottom: 5px;
 
     &:hover {
       color: $pink;
@@ -101,10 +173,45 @@
   position: relative;
 
   @include respond(normal) {
-    margin-bottom: 10px;
+    margin-right: 0;
 
     &:last-child {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+    }
+  }
+}
+@include respond(normal) {
+  .expand-menu ~ .has-items-link,
+  .expand-menu ~ .second__has-items-link {
+    &:before {
+      content: "\f107";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      color: $dark_gray;
+      font-size: x-large;
+
+      @include respond(normal) {
+        position: absolute;
+        top: -5px;
+        right: 0;
+        color: $dark_gray;
+      }
+    }
+  }
+  .expand-menu {
+    right: 0;
+    top: 0;
+  }
+  .expand-menu:checked ~ {
+    .has-items-link {
+      &:before {
+        transform: rotate(-180deg);
+      }
+    }
+    .second__has-items-link {
+      &:before {
+        transform: rotate(-180deg);
+      }
     }
   }
 }
@@ -115,13 +222,10 @@
     content: "\f107";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    color: inherit;
-
-    @include respond(large-desktop) {
-      position: absolute;
-      top: 2px;
-      right: 0;
-    }
+    color: $white;
+    position: absolute;
+    top: 2px;
+    right: 0;
   }
 
   &:hover {
@@ -129,6 +233,13 @@
       opacity: 1;
       visibility: visible;
       transform: translateY(-10px);
+
+      @include respond(normal) {
+        opacity: 0;
+        visibility: hidden;
+        transform: none;
+        height: 0;
+      }
     }
   }
 }
@@ -137,6 +248,13 @@
   opacity: 0;
   visibility: hidden;
   transition: all 350ms ease-in-out;
+
+  @include respond(normal) {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: none;
+  }
 }
 .second__wrapper {
   background-color: #fff;
@@ -146,9 +264,20 @@
   top: 30px;
   right: 0;
   min-width: 150px;
+
+  @include respond(normal) {
+    position: relative;
+    padding: 0 0 0 20px;
+    min-width: auto;
+    top: 0;
+  }
 }
 .second__item {
   padding-bottom: 15px;
+
+  @include respond(normal) {
+    padding-bottom: 0;
+  }
 
   &:last-of-type {
     padding-bottom: 0;
@@ -159,8 +288,32 @@
   color: $dark_gray;
   transition: 0.2s;
 
+  @include respond(normal) {
+    padding-bottom: 5px;
+  }
+
   &:hover {
     color: $pink;
+  }
+}
+.expand-menu {
+  display: none;
+
+  @include respond(normal) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    opacity: 0;
+    z-index: 100;
+  }
+}
+@include respond(normal) {
+  .expand-menu:checked ~ .second {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
   }
 }
 .second__has-items {
@@ -174,12 +327,23 @@
     top: 2px;
     right: 15px;
     color: $base;
+
+    @include respond(normal) {
+      display: none;
+    }
   }
   &:hover {
     .third {
       opacity: 1;
       visibility: visible;
       transform: translateY(-10px);
+
+      @include respond(normal) {
+        opacity: 0;
+        visibility: hidden;
+        transform: none;
+        height: 0;
+      }
     }
   }
 }
@@ -189,6 +353,13 @@
   opacity: 0;
   visibility: hidden;
   transition: all 350ms ease-in-out;
+
+  @include respond(normal) {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: none;
+  }
 }
 .third__wrapper {
   position: absolute;
@@ -199,9 +370,22 @@
   border-radius: 3px;
   padding: 20px;
   box-shadow: 0 5px 40px rgba(0, 0, 0, 0.07);
+
+  @include respond(normal) {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    padding: 0 0 0 20px;
+    box-shadow: none;
+    min-width: auto;
+  }
 }
 .third__item {
   padding-bottom: 15px;
+
+  @include respond(normal) {
+    padding-bottom: 0;
+  }
 
   &:last-child {
     padding-bottom: 0;
@@ -213,7 +397,42 @@
   color: $dark_gray;
   transition: 0.2s;
 
+  @include respond(normal) {
+    padding-bottom: 5px;
+  }
+
   &:hover {
     color: $pink;
+  }
+}
+@include respond(normal) {
+  .expand-menu:checked ~ .third {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+  .expand-menu-bar {
+    top: 28px;
+    right: 21px;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+.menubar-white {
+  background-color: $white;
+
+  @include respond(normal) {
+    background-color: inherit;
+  }
+
+  .nav__link {
+    color: $dark_gray;
+  }
+  .has-items {
+    position: relative;
+
+    &:before {
+      color: $dark_gray;
+    }
   }
 }

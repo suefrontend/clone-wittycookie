@@ -1,24 +1,29 @@
-<dl class="accordion">
-  <dt class="accordion__title">
-    <button class="accordion__btn accordion__btn--active" type="button">Introduction</button>
-  </dt>
-  <dd class="accordion__body accordion__body--active">
-    <p class="accordion__text">lorem ipsum lorem ipsum</p>
-    <div class="accordion__cards cards cards--col3">
-      <div class="cards__item card">
-        <figure class="card__img-wrapper">
-          <img src="" alt="" class="card__img">
-        </figure>
-        <div class="card__body">
-          <h3 class="card__title">Web制作</h3>
-          <p class="card__text">lorem ipsum</p>
-        </div>
-      </div>
+@@@condition:release:if:(!=@@@metainfo__release@@@)@@@
+<li class="cards__item col__3"  data-finish="@@@metainfo__開催終了日時@@@" data-close="@@@metainfo__受付終了日時@@@">
+  <div class="card">
+
+    <a href="/@@@filename@@@">
+        @@@condition:thumbnail:if:(!=@@@image1@@@)@@@
+        <img src="/image.jsp?id=@@@image1@@@" alt="" adlesse_been_here="true">
+        @@@condition:thumbnail:elseif:(=@@@image1@@@)@@@
+        <img src="/image.jsp?id=@@@image2@@@" alt="" adlesse_been_here="true">
+        @@@condition:thumbnail:endif@@@
+    </a>
+
+    <div class="card__content">
+      @@@include:top/include/latestnewslabels.content@@@
+      <strong>@@@extension:date(@@@metainfo__release@@@,%Y年%m月%d日)@@@ </strong>
+      @@@condition:label:if:(05-03-01-think_parkers=@@@contentgroup@@@||05-03-02-dock=@@@contentgroup@@@)@@@
+      <span class="category-label category-label-green">コモレビズ見学ツアー</span>
+      @@@condition:label:elseif:(05-02-seminar=@@@contentgroup@@@||05-02-01-comorebizseminar=@@@contentgroup@@@)@@@
+      <span class="category-label category-label-blue">セミナー</span>
+      @@@condition:label:elseif:(05-04-other=@@@contentgroup@@@)@@@
+      <span class="category-label category-label-gray">その他</span>
+      @@@condition:label:endif@@@
+
+      <h3 class="card__title">@@@title@@@</h3>
     </div>
-    <div class="cta-area">
-      <h3 class="cta-area__title">Contact us</h3>
-      <p class="cta-area__text">lorem ipsum lorem ipsum lorem</p>
-      <a href="#" class="btn">Contact</a>
-    </div>
-  </dd>
-</dl>
+
+  </div>
+</li>
+@@@condition:release:endif@@@

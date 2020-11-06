@@ -14,33 +14,35 @@
 <body>
 
   <div class="hero">
-    <header>
+    <header class="header">
       <div class="topbar">
         <div class="container topbar__inner">
           <div class="topbar__contact">(888) 936-3653 | info@wittycookie.com</div>
           <div class="topbar__form">
             <span class="topbar__form-text">Customer Portal</span>
-            <i class="fas fa-search"></i>
-            <!--<div class="topbar__form-input">
-              <span><input type="text" placeholder="Search ..."><i class="fas fa-times"></i></span>
-            </div>-->
+            <div class="topbar__form-input">
+              <i class="fas fa-search"></i>
+              <input class="" type="text" placeholder="Search ...">
+            </div>
           </div>
         </div>
       </div>
 
       <div class="menubar">
-        <div class="menubar__inner">
+        <div class="container menubar__inner">
           <div class="menubar__logo">
-            <a href="" class="desktop-only"><img src="images/logo_white.png" alt="" class="header__logo"></a>
-            <a href="" class="sp-only"><img src="images/logo_navy.png" alt="" ></a>
+            <a href="" class="logo-white"><img src="images/logo_white.png" alt=""></a>
+            <a href="" class="logo-navy"><img src="images/logo_navy.png" alt="" ></a>
             <span class="sp-only"><i class="fas fa-bars fa-lg"></i></span>
           </div>
+          <input class="expand-menu expand-menu-bar" type="checkbox">
           <div class="menubar__nav">
           <nav class="header-nav desktop-only">
             <ul class="nav__items">
               <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
               <li class="nav__item has-items">
-                <a class="nav__link" href="#">Service</a>
+                <input class="expand-menu" type="checkbox">
+                <a class="nav__link has-items-link" href="#">Service</a>
                 <ul class="second">
                   <div class="second__wrapper">
                     <li class="second__item">
@@ -56,37 +58,40 @@
                       <a class="second__link" href="#">Social Media</a>
                     </li>
                     <li class="second__item second__has-items">
-                      <a class="second__link" href="#">Digital Ads</a>
-
+                      <input class="expand-menu" type="checkbox">
+                      <a class="second__link second__has-items-link" href="#">Digital Ads</a>
                       <ul class="third">
                         <div class="third__wrapper">
                           <li class="third__item"><a class="third__link" href="#">Google
-                              Ads</a></li>
+                              Ads</a>
+                          </li>
                           <li class="third__item"><a class="third__link" href="#">Social
-                              Ads</a></li>
+                              Ads</a>
+                          </li>
                         </div>
                     </li>
+                  </div>
                 </ul>
-        </div>
-        </ul>
         </li>
-        <li class="nav__item has-items"><a class="nav__link" href="#">Portfolio</a>
-          <ul class="second">
-            <div class="second__wrapper">
-              <li class="second__item">
-                <a class="second__link" href="#">Website</a>
-              </li>
-              <li class="second__item">
-                <a class="second__link" href="#">Branding</a>
-              </li>
-              <li class="second__item">
-                <a class="second__link" href="#">Marketing</a>
-              </li>
-              <li class="second__item">
-                <a class="second__link" href="#">SEO</a>
-              </li>
-            </div>
-          </ul>
+        <li class="nav__item has-items">
+          <input class="expand-menu" type="checkbox">
+          <a class="nav__link has-items-link" href="#">Portfolio</a>
+            <ul class="second">
+              <div class="second__wrapper">
+                <li class="second__item">
+                  <a class="second__link" href="#">Website</a>
+                </li>
+                <li class="second__item">
+                  <a class="second__link" href="#">Branding</a>
+                </li>
+                <li class="second__item">
+                  <a class="second__link" href="#">Marketing</a>
+                </li>
+                <li class="second__item">
+                  <a class="second__link" href="#">SEO</a>
+                </li>
+              </div>
+            </ul>
         </li>
         <li class="nav__item"><a class="nav__link" href="#">About</a></li>
         <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
