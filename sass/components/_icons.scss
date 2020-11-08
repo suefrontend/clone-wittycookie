@@ -15,15 +15,12 @@
     color: white;
   }
 }
-.rating {
+.fa-star {
   color: $yellow;
+  margin-right: 5px;
 
-  & > i {
-    margin-right: 5px;
-
-    &:last-child {
-      margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
   }
 }
 .fa-facebook-f {

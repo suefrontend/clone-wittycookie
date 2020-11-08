@@ -9,7 +9,3 @@ searchIcon.addEventListener('click', function() {
 closeIcon.addEventListener('click', function() {
   searchBar.classList.toggle('active');
 });
-
-function toggleInput() {
-  searchBar.classList.toggle('active');
-}
