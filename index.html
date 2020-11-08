@@ -14,58 +14,58 @@
 <body>
 
   <div class="hero">
-    <header class="header">
-      <div class="topbar">
+    <header class="header js-header">
+      <div class="topbar js-topbar">
         <div class="container topbar__inner">
           <div class="topbar__contact">(888) 936-3653 | info@wittycookie.com</div>
           <div class="topbar__form">
             <span class="topbar__form-text">Customer Portal</span>
-            <div class="topbar__form-input">
-              <i class="fas fa-search"></i>
-              <input class="" type="text" placeholder="Search ...">
+            <div class="topbar__form-input js-topbar__form-input">
+              <i class="fas fa-search js-fa-search"></i>
+              <input type="text" placeholder="Search ...">
             </div>
           </div>
         </div>
       </div>
 
-      <div class="menubar">
-        <div class="container menubar__inner">
-          <div class="menubar__logo">
-            <a href="" class="logo-white"><img src="images/logo_white.png" alt=""></a>
-            <a href="" class="logo-navy"><img src="images/logo_navy.png" alt="" ></a>
+      <div class="menu-bar js-menu-bar">
+        <div class="container menu-bar__inner">
+          <div class="menu-bar__logo">
+            <a href="/" class="logo-white"><img src="images/logo_white.png" alt="White Logo"></a>
+            <a href="/" class="logo-navy"><img src="images/logo_navy.png" alt="Navy Logo" ></a>
             <span class="sp-only"><i class="fas fa-bars fa-lg"></i></span>
           </div>
           <input class="expand-menu expand-menu-bar" type="checkbox">
-          <div class="menubar__nav">
+          <div class="menu-bar__nav">
           <nav class="header-nav desktop-only">
             <ul class="nav__items">
               <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
               <li class="nav__item has-items">
                 <input class="expand-menu" type="checkbox">
                 <a class="nav__link has-items-link" href="#">Service</a>
-                <ul class="second">
-                  <div class="second__wrapper">
-                    <li class="second__item">
-                      <a class="second__link" href="#">Website Design</a>
+                <ul class="dropdown-menu dropdown-menu-first">
+                  <div class="dropdown-menu__wrapper  dropdown-menu-first__wrapper">
+                    <li class="dropdown-menu__item">
+                      <a class="dropdown-menu__link" href="#">Website Design</a>
                     </li>
-                    <li class="second__item">
-                      <a class="second__link" href="#">Brading</a>
+                    <li class="dropdown-menu__item">
+                      <a class="dropdown-menu__link" href="#">Brading</a>
                     </li>
-                    <li class="second__item">
-                      <a class="second__link" href="#">SEO</a>
+                    <li class="dropdown-menu__item">
+                      <a class="dropdown-menu__link" href="#">SEO</a>
                     </li>
-                    <li class="second__item">
-                      <a class="second__link" href="#">Social Media</a>
+                    <li class="dropdown-menu__item">
+                      <a class="dropdown-menu__link" href="#">Social Media</a>
                     </li>
-                    <li class="second__item second__has-items">
+                    <li class="dropdown-menu__item has-items">
                       <input class="expand-menu" type="checkbox">
-                      <a class="second__link second__has-items-link" href="#">Digital Ads</a>
-                      <ul class="third">
-                        <div class="third__wrapper">
-                          <li class="third__item"><a class="third__link" href="#">Google
+                      <a class="dropdown-menu__link has-items-link" href="#">Digital Ads</a>
+                      <ul class="dropdown-menu dropdown-menu-second">
+                        <div class="dropdown-menu__wrapper  dropdown-menu-second__wrapper">
+                          <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Google
                               Ads</a>
                           </li>
-                          <li class="third__item"><a class="third__link" href="#">Social
+                          <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Social
                               Ads</a>
                           </li>
                         </div>
@@ -76,19 +76,19 @@
         <li class="nav__item has-items">
           <input class="expand-menu" type="checkbox">
           <a class="nav__link has-items-link" href="#">Portfolio</a>
-            <ul class="second">
-              <div class="second__wrapper">
-                <li class="second__item">
-                  <a class="second__link" href="#">Website</a>
+            <ul class="dropdown-menu dropdown-menu-first">
+              <div class="dropdown-menu__wrapper dropdown-menu-first__wrapper">
+                <li class="dropdown-menu__item">
+                  <a class="dropdown-menu__link" href="#">Website</a>
                 </li>
-                <li class="second__item">
-                  <a class="second__link" href="#">Branding</a>
+                <li class="dropdown-menu__item">
+                  <a class="dropdown-menu__link" href="#">Branding</a>
                 </li>
-                <li class="second__item">
-                  <a class="second__link" href="#">Marketing</a>
+                <li class="dropdown-menu__item">
+                  <a class="dropdown-menu__link" href="#">Marketing</a>
                 </li>
-                <li class="second__item">
-                  <a class="second__link" href="#">SEO</a>
+                <li class="dropdown-menu__item">
+                  <a class="dropdown-menu__link" href="#">SEO</a>
                 </li>
               </div>
             </ul>
@@ -184,8 +184,8 @@
 
           <button class="btn btn-outline btn-hover-float-orange">Learn More</button>
         </div>
-        <figure class="media__img">
-          <img src="images/Artboard-6-1.jpg" alt="">
+        <figure class="media__img-wrapper">
+          <img class="media__img" src="images/Artboard-6-1.jpg" alt="">
         </figure>
       </div>
       <div class="media media-reverse container">
@@ -211,8 +211,8 @@
 
           <button class="btn btn-outline btn-hover-float-orange">Get Started</button>
         </div>
-        <figure class="media__img">
-          <img src="images/Screen-Shot-2018-04-16-at-4.481.jpg" alt="">
+        <figure class="media__img-wrapper">
+          <img class="media__img" src="images/Screen-Shot-2018-04-16-at-4.481.jpg" alt="">
         </figure>
       </div>
       <div class="media container">
@@ -241,8 +241,8 @@
 
           <button class="btn btn-outline btn-hover-float-orange">Get Started</button>
         </div>
-        <figure class="media__img">
-          <img src="images/Screen-Shot-2018-04-16-at-4.40.png" alt="">
+        <figure class="media__img-wrapper">
+          <img class="media__img" src="images/Screen-Shot-2018-04-16-at-4.40.png" alt="">
         </figure>
       </div>
       <div class="media media-reverse container">
@@ -266,8 +266,8 @@
 
           <button class="btn btn-outline btn-hover-float-orange">Learn More</button>
         </div>
-        <figure class="media__img">
-          <img src="images/Screen-Shot-2018-04-16-at-4.48.jpg" alt="">
+        <figure class="media__img-wrapper">
+          <img class="media__img" src="images/Screen-Shot-2018-04-16-at-4.48.jpg" alt="">
         </figure>
       </div>
     </section>
@@ -335,7 +335,7 @@
       <div class="works-cards">
 
         <div class="works-cards__item">
-          <figure class="works-cards__img"><a href="#"><img src="images/impactsolar-featured-1024x576.jpg" alt=""></a>
+          <figure class="works-cards__img-wrapper"><a href="#"><img class="works-cards__img" src="images/impactsolar-featured-1024x576.jpg" alt=""></a>
           </figure>
           <div class="works-cards__body">
             <p class="works-cards__title">Impactsolar</p>
@@ -344,7 +344,7 @@
         </div>
 
         <div class="works-cards__item">
-          <figure class="works-cards__img"><a href="#"><img src="images/culineur-featured-1024x576.jpg" alt=""></a>
+          <figure class="works-cards__img-wrapper"><a href="#"><img class="works-cards__img" src="images/culineur-featured-1024x576.jpg" alt=""></a>
           </figure>
           <div class="works-cards__body">
             <p class="works-cards__title">Culineur</p>
@@ -353,7 +353,7 @@
         </div>
 
         <div class="works-cards__item">
-          <figure class="works-cards__img"><a href="#"><img src="images/dm-featured-1024x576.jpg" alt=""></a></figure>
+          <figure class="works-cards__img-wrapper"><a href="#"><img class="works-cards__img" src="images/dm-featured-1024x576.jpg" alt=""></a></figure>
           <div class="works-cards__body">
             <p class="works-cards__title">DM Home</p>
             <button class="btn btn-outline btn-hover-orange">Read more</button>
@@ -364,7 +364,7 @@
       <div class="works-cards works-cards-second">
 
         <div class="works-cards__item">
-          <figure class="works-cards__img"><a href="#"><img src="images/leagold-featured-1024x576.jpg" alt=""></a>
+          <figure class="works-cards__img-wrapper"><a href="#"><img class="works-cards__img" src="images/leagold-featured-1024x576.jpg" alt=""></a>
           </figure>
           <div class="works-cards__body">
             <p class="works-cards__title">Leagold</p>
@@ -373,7 +373,7 @@
         </div>
 
         <div class="works-cards__item">
-          <figure class="works-cards__img"><a href="#"><img src="images/sungfish-featured-1024x576.jpg" alt=""></a>
+          <figure class="works-cards__img-wrapper"><a href="#"><img class="works-cards__img" src="images/sungfish-featured-1024x576.jpg" alt=""></a>
           </figure>
           <div class="works-cards__body">
             <p class="works-cards__title">Sungfish</p>
@@ -382,7 +382,7 @@
         </div>
 
         <div class="works-cards__item">
-          <figure class="works-cards__img"><a href="#"><img src="images/hbpc-featured-1024x576.jpg" alt=""></a></figure>
+          <figure class="works-cards__img-wrapper"><a href="#"><img class="works-cards__img" src="images/hbpc-featured-1024x576.jpg" alt=""></a></figure>
           <div class="works-cards__body">
             <p class="works-cards__title">Hillsborough Clinic</p>
             <button class="btn btn-outline btn-hover-orange">Read more</button>
@@ -414,8 +414,8 @@
                   class="fas fa-star"></i><i class="fas fa-star"></i></div>
             </div>
           </div>
-          <figure class="cards__img">
-            <img class="clipped-image-circle" src="images/mercy-1.png" alt="">
+          <figure class="cards__img-wrapper">
+            <img class="cards__img clipped-image-circle" src="images/mercy-1.png" alt="">
           </figure>
         </div>
         <div class="cards__item">
@@ -431,8 +431,8 @@
                   class="fas fa-star"></i><i class="fas fa-star"></i></div>
             </div>
           </div>
-          <figure class="cards__img">
-            <img class="clipped-image-circle" src="images/beta.png" alt="">
+          <figure class="cards__img-wrapper">
+            <img class="cards__img clipped-image-circle" src="images/beta.png" alt="">
           </figure>
         </div>
         <div class="cards__item">
@@ -452,8 +452,8 @@
                   class="fas fa-star"></i><i class="fas fa-star"></i></div>
             </div>
           </div>
-          <figure class="cards__img">
-            <img class="clipped-image-circle" src="images/blenz-4.png" alt="">
+          <figure class="cards__img-wrapper">
+            <img class="cards__img clipped-image-circle" src="images/blenz-4.png" alt="">
           </figure>
         </div>
         <div class="cards__item">
@@ -474,8 +474,8 @@
             </div>
           </div>
 
-          <figure class="cards__img">
-            <img class="clipped-image-circle" src="images/chef.png" alt="">
+          <figure class="cards__img-wrapper">
+            <img class="cards__img clipped-image-circle" src="images/chef.png" alt="">
           </figure>
 
         </div>
@@ -498,7 +498,7 @@
       <div class="blog-cards">
         <div class="blog-cards__item">
           <figure class="blog-cards__img-wrapper">
-            <a href="#"><img src="images/content-ZSXGPLA-768x576.jpg" alt=""></a>
+            <a href="#"><img class="blog-cards__img" src="images/content-ZSXGPLA-768x576.jpg" alt=""></a>
           </figure>
 
           <div class="blog-cards__body">
@@ -522,7 +522,7 @@
 
         <div class="blog-cards__item">
           <figure class="blog-cards__img-wrapper">
-            <a href="#"><img src="images/stephen-phillips-hostreviews-co-uk-shr_Xn8S8QU-unsplash-1.jpg" alt=""></a>
+            <a href="#"><img class="blog-cards__img" src="images/stephen-phillips-hostreviews-co-uk-shr_Xn8S8QU-unsplash-1.jpg" alt=""></a>
           </figure>
           <div class="blog-cards__body">
             <p class="blog-cards__title"><a class="blog-cards__title__link" href="#">5 Learning Platforms to Master SEO
@@ -546,7 +546,7 @@
 
         <div class="blog-cards__item">
           <figure class="blog-cards__img-wrapper">
-            <a href="#"><img src="images/image001.jpg" alt=""></a>
+            <a href="#"><img class="blog-cards__img" src="images/image001.jpg" alt=""></a>
           </figure>
           <div class="blog-cards__body">
             <p class="blog-cards__title"><a class="blog-cards__title__link" href="#">Common Content Writing Mistakes to
@@ -693,7 +693,8 @@
       </div>
     </div>
   </footer>
-  <script src="js/app.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/form.js"></script>
 </body>
 
 </html>

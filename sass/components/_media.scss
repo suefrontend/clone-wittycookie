@@ -12,20 +12,19 @@
   &__body {
     width: 50%;
   }
-  &__img {
+  &__img-wrapper {
     width: 50%;
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
+  }
+  &__img {
+    max-width: 100%;
+    height: auto;
   }
 
   &-reverse {
     flex-direction: row-reverse;
   }
   &__title {
-    color: $dark_gray;
+    color: $dark-gray;
     font-size: 180%;
     line-height: 1.4;
 
