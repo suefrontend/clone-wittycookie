@@ -1,27 +1,79 @@
 @mixin respond($breakpoint) {
-  @if $breakpoint == large-desktop {
-    @media only screen and (min-width: $large-desktop) {
+  @if $breakpoint == xxl {
+    @media only screen and (min-width: $xxl) {
       @content;
     }
   }
-  @if $breakpoint == normal {
-    @media only screen and (max-width: $desktop) {
+  @if $breakpoint == xl {
+    @media only screen and (min-width: $xl) and (max-width: $xxl - 1px) {
       @content;
     }
   }
-  @if $breakpoint == desktop {
-    @media only screen and (min-width: $desktop) and (max-width: $large-desktop - 1px) {
+  @if $breakpoint == lg {
+    @media only screen and (min-width: $lg) and (max-width: $xl - 1px) {
       @content;
     }
   }
-  @if $breakpoint == tablet {
-    @media only screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+  @if $breakpoint == md {
+    @media only screen and (min-width: $md) and (max-width: $lg - 1px) {
       @content;
     }
   }
-  @if $breakpoint == sp {
-    @media only screen and (max-width: $sp) {
+  @if $breakpoint == sm {
+    @media only screen and (min-width: $sm) {
       @content;
     }
+  }
+  @if $breakpoint == small {
+    @media only screen and (max-width: $lg - 1px) {
+      @content;
+    }
+  }
+}
+@keyframes text-rotor-animation {
+  0% {
+    transform: translate3d(0, 80px, 0);
+    opacity: 0;
+  }
+
+  20%,
+  80% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(0, -80px, 0);
+    opacity: 0;
+  }
+}
+@keyframes text-rotor-animation-last-child {
+  0% {
+    transform: translate3d(0, 80px, 0);
+    opacity: 0;
+  }
+
+  20%,
+  80% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes kd-fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100px, 0);
+    transform: translate3d(0, 100px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
 }

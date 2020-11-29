@@ -6,12 +6,12 @@ header.fixed {
 header .logo-navy {
   display: none;
 
-  @include respond(normal) {
+  @include respond(small) {
     display: block !important;
   }
 }
 header .logo-white {
-  @include respond(normal) {
+  @include respond(small) {
     display: none !important;
   }
 }
@@ -22,7 +22,7 @@ header.fixed .logo-white {
   display: none;
 }
 .topbar {
-  @include respond(normal) {
+  @include respond(small) {
     display: none;
   }
 }
@@ -76,17 +76,17 @@ header.fixed .logo-white {
 .menu-bar {
   transition: all 0.4s ease-in-out;
 
-  @include respond(normal) {
+  @include respond(small) {
     box-sizing: border-box;
   }
 }
 .menu-bar .container {
-  @include respond(normal) {
+  @include respond(small) {
     width: 100%;
   }
 }
 .menu-bar__nav {
-  @include respond(normal) {
+  @include respond(small) {
     background-color: $white;
     -webkit-transform: translateY(-200%);
     -moz-transform: translateY(-200%);
@@ -96,6 +96,7 @@ header.fixed .logo-white {
     transition: all 0.5s ease-in-out;
     padding: 20px;
     box-sizing: border-box;
+    display: none;
   }
 }
 .menu-bar__inner {
@@ -104,17 +105,17 @@ header.fixed .logo-white {
   flex-wrap: nowrap;
   align-items: center;
 
-  @include respond(large-desktop) {
-    width: $large-desktop;
+  @include respond(xxl) {
+    width: $xxl;
   }
 
-  @include respond(normal) {
+  @include respond(small) {
     flex-direction: column;
     align-items: inherit;
   }
 }
 .menu-bar__logo {
-  @include respond(normal) {
+  @include respond(small) {
     color: $dark-gray;
     display: flex;
     justify-content: space-between;
@@ -132,7 +133,7 @@ header.fixed .logo-white {
   display: flex;
   align-items: center;
 
-  @include respond(normal) {
+  @include respond(small) {
     flex-direction: column;
     align-items: stretch;
   }
@@ -140,7 +141,7 @@ header.fixed .logo-white {
 .nav__items {
   display: flex;
 
-  @include respond(normal) {
+  @include respond(small) {
     flex-direction: column;
   }
 }
@@ -149,7 +150,7 @@ header.fixed .logo-white {
   padding-right: 14px;
   transition: 0.3s;
 
-  @include respond(normal) {
+  @include respond(small) {
     color: $dark-gray;
     display: block;
     padding-bottom: 5px;
@@ -163,7 +164,7 @@ header.fixed .logo-white {
   margin-right: 25px;
   position: relative;
 
-  @include respond(normal) {
+  @include respond(small) {
     margin-right: 0;
 
     &:last-child {
@@ -178,7 +179,7 @@ header.fixed .logo-white {
   visibility: hidden;
   transition: all 350ms ease-in-out;
 
-  @include respond(normal) {
+  @include respond(small) {
     height: 0;
     transition: none;
   }
@@ -189,7 +190,7 @@ header.fixed .logo-white {
   padding: 20px;
   box-shadow: 0 5px 40px rgba(0, 0, 0, 0.07);
 
-  @include respond(normal) {
+  @include respond(small) {
     box-shadow: none;
     padding: 0 0 0 10px;
   }
@@ -200,7 +201,7 @@ header.fixed .logo-white {
   right: 0;
   min-width: 150px;
 
-  @include respond(normal) {
+  @include respond(small) {
     position: relative;
     padding: 0 0 0 10px;
     min-width: auto;
@@ -215,7 +216,7 @@ header.fixed .logo-white {
   bottom: -60px;
   right: -220px;
 
-  @include respond(normal) {
+  @include respond(small) {
     position: relative;
     bottom: 0;
     right: 0;
@@ -226,7 +227,7 @@ header.fixed .logo-white {
 .dropdown-menu__item {
   padding-bottom: 15px;
 
-  @include respond(normal) {
+  @include respond(small) {
     padding-bottom: 0;
   }
 
@@ -239,7 +240,7 @@ header.fixed .logo-white {
   color: $dark-gray;
   transition: 0.2s;
 
-  @include respond(normal) {
+  @include respond(small) {
     padding-bottom: 5px;
   }
 
@@ -264,7 +265,7 @@ header.fixed .logo-white {
     .dropdown-menu {
       transform: translateY(-10px);
 
-      @include respond(normal) {
+      @include respond(small) {
         opacity: 0;
         visibility: hidden;
         transform: none;
@@ -275,7 +276,7 @@ header.fixed .logo-white {
       opacity: 1;
       visibility: visible;
 
-      @include respond(normal) {
+      @include respond(small) {
         opacity: 0;
         visibility: hidden;
       }
@@ -289,7 +290,7 @@ header.fixed .logo-white {
     right: 15px;
     color: $base;
 
-    @include respond(normal) {
+    @include respond(small) {
       display: none;
     }
   }
@@ -298,7 +299,7 @@ header.fixed .logo-white {
       opacity: 1;
       visibility: visible;
       min-width: 180px;
-      @include respond(normal) {
+      @include respond(small) {
         opacity: 0;
         visibility: hidden;
       }
@@ -309,7 +310,7 @@ header.fixed .logo-white {
 .menu-bar-white {
   background-color: $white;
 
-  @include respond(normal) {
+  @include respond(small) {
     background-color: inherit;
   }
 
@@ -329,7 +330,7 @@ header.fixed .logo-white {
   display: none;
 }
 
-@include respond(normal) {
+@include respond(small) {
   .expand-menu {
     display: block;
     position: absolute;
@@ -350,7 +351,8 @@ header.fixed .logo-white {
     visibility: visible !important;
   }
   .expand-menu:checked ~ .menu-bar__nav {
-    opacity: 1;
+    // opacity: 1;
+    display: block;
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
     transform: translateY(0px);

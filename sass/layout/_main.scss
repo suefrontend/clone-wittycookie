@@ -1,14 +1,13 @@
 .container {
-  width: $large-desktop;
   margin: 0 auto;
 
-  @include respond(normal) {
-    width: $desktop;
+  @include respond(xxl) {
+    width: $xxl;
   }
-  @include respond(tablet) {
-    width: $tablet;
+  @include respond(xl) {
+    width: $xl;
   }
-  @include respond(sp) {
-    width: $sp;
+  @include respond(lg) {
+    width: $lg;
   }
 }

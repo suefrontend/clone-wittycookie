@@ -1,15 +1,35 @@
 .desktop-only {
-  @include respond(normal) {
+  @include respond(lg) {
     display: none;
   }
 }
 .sp-only {
-  display: none;
+  display: block;
 
-  @include respond(normal) {
-    display: block;
+  @include respond(xxl) {
+    display: none;
+  }
+  @include respond(xl) {
+    display: none;
+  }
+  @include respond(lg) {
+    display: none;
   }
 }
-.display-none {
-  display: none;
+.br-desktop {
+  @include respond(xxl) {
+    display: block;
+  }
+  @include respond(xl) {
+    display: block;
+  }
+  @include respond(lg) {
+    display: none;
+  }
+  @include respond(md) {
+    display: none;
+  }
+  @include respond(sm) {
+    display: none;
+  }
 }
