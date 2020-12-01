@@ -32,26 +32,22 @@
       display: flex;
       align-items: center;
       bottom: 0;
-      transform: translate3d(0, 80px, 0);
 
       @include respond(small) {
         font-size: 28px;
       }
     }
     &__text-1 {
-      animation: text-rotor-animation 1.5s 0.5s;
+      animation: text-rotor-animation 1.5s 1s;
     }
     &__text-2 {
-      animation: text-rotor-animation 1.5s 1.75s;
+      animation: text-rotor-animation 1.5s 2.5s;
     }
     &__text-3 {
-      animation: text-rotor-animation 1.5s 3s;
+      animation: text-rotor-animation 1.5s 4s;
     }
     &__text-4 {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-      transition: all 0.5s 4.25s;
-      animation: none !important;
+      animation: text-rotor-animation-last-child 1.5s 5.5s forwards;
     }
   }
 
