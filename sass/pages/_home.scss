@@ -31,9 +31,18 @@
   display: flex;
   justify-content: center;
   padding: 20px 0;
+
+  @include respond(small) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .feature__item {
   margin-right: 40px;
+  @include respond(small) {
+    margin-right: 0;
+    padding: 10px 0;
+  }
 
   &:last-child {
     margin-right: 0;
