@@ -20,6 +20,10 @@
   &__subtitle {
     text-align: center;
     margin-bottom: 60px;
+
+    @include respond(small) {
+      margin-bottom: 20px;
+    }
   }
 }
 .feature {
@@ -59,6 +63,10 @@
   align-items: stretch;
   flex-wrap: wrap;
 
+  @include respond(sm) {
+    align-items: center;
+  }
+
   &__item {
     box-sizing: border-box;
     border: 1px solid $light_gray;
@@ -72,6 +80,16 @@
 
     &:last-child {
       margin-right: 0;
+
+      @include respond(sm) {
+        margin-right: auto;
+      }
+    }
+
+    @include respond(sm) {
+      width: 90%;
+      margin: 0 auto 20px auto;
+      text-align: center;
     }
   }
   &__meta {

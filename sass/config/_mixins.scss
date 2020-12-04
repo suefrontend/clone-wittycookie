@@ -20,7 +20,7 @@
     }
   }
   @if $breakpoint == sm {
-    @media only screen and (min-width: $sm) {
+    @media only screen and (max-width: $sm) {
       @content;
     }
   }
