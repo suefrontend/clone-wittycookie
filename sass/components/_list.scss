@@ -23,8 +23,22 @@
   width: 177px;
   margin-bottom: 30px;
 
+  @include respond(small) {
+    width: 33.3333%;
+  }
+
   &:last-child {
     margin-bottom: 0;
+
+    @include respond(small) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.list-logos__item img {
+  @include respond(small) {
+    max-width: 100%;
+    max-height: 80px;
   }
 }
 .list-logos__link {
