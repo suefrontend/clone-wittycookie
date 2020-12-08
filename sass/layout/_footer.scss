@@ -13,25 +13,54 @@
     &-title {
       font-weight: bold;
     }
+
     &__inner {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+
+      @include respond(sm) {
+        flex-direction: column;
+        padding: 0 30px;
+      }
     }
     .site-navigation {
       width: 300px;
+
+      @include respond(sm) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
     }
     &-news {
       width: 200px;
+
+      @include respond(sm) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    &-news .upper-footer-title {
+      @include respond(sm) {
+        text-align: center;
+      }
     }
     &-address {
       width: 200px;
+
+      @include respond(sm) {
+        width: 100%;
+      }
     }
     &-social-media {
       margin-top: 20px;
+      display: flex;
+
+      @include respond(sm) {
+        justify-content: center;
+      }
 
       &__item {
-        display: inline;
         margin-right: 20px;
 
         &:last-child {
@@ -62,15 +91,32 @@
     background-color: #1f1f1f;
     padding: 40px 0;
 
+    @include respond(sm) {
+      text-align: center;
+    }
+
     .float-left {
       float: left;
+
+      @include respond(sm) {
+        float: none;
+      }
     }
     .float-right {
       float: right;
+
+      @include respond(sm) {
+        float: none;
+      }
     }
     .clear {
       clear: both;
       padding-top: 20px;
+    }
+    &__navigation:first-of-type .lower-footer__navigation__item {
+      @include respond(sm) {
+        display: block;
+      }
     }
     &__navigation__item {
       display: inline;
@@ -80,6 +126,7 @@
         margin-right: 0;
       }
     }
+
     &__navigation__link {
       color: $white;
       transition: 0.3s;
