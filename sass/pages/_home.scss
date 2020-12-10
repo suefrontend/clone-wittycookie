@@ -295,6 +295,12 @@
   justify-content: space-between;
   align-items: center;
 
+  @include respond(small) {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
   &__body {
     width: 50%;
   }
