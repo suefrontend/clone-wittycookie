@@ -20,6 +20,7 @@
     }
   }
   @if $breakpoint == sm {
+    /* $md -1 はここでのみ微調整している */
     @media only screen and (max-width: $md - 1px) {
       @content;
     }
