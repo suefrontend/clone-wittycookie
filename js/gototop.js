@@ -3,13 +3,14 @@
 // もし、topからxxpxまで近づいたら、activeを外す
 
 // .go-to-top をdocument.querySelectorで取得する
-const btn = document.querySelector('.go-to-top');
+const btn = document.getElementById('js-go-to-top');
+console.log(btn)
 
 // .go-to-top の上からの座標を取得
 window.onscroll = function() {
   const pageYOffset = window.pageYOffset;
 
-  if(y > 200) {
+  if(pageYOffset > 200) {
     btn.classList.add('active')
   } else {
     btn.classList.remove('active')
