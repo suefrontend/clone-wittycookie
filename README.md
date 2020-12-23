@@ -1,19 +1,3 @@
-# Overview
-
-This is a copy website of [WittyCookie](https://www.wittycookie.ca/), a Vancouver based web development company. Only the front page is coded.
-
-# Install
-
-CSS file is not included in the repo. Execute the following command to create `style.css`. To run the website, open index.html
-
-```
-$ npm run compile:sass
-```
-
-# Mentor
-
-Huge thanks to my mentor Kenji Morita https://github.com/kenmori
-
 # 概要
 
 カナダのバンクーバーの web 制作エージェンシー [WittyCookie](https://www.wittycookie.ca/) の模写コーディングです。トップページのみのコーディングです。
@@ -31,3 +15,19 @@ $ npm run compile:sass
 # メンター
 
 コーディングにあたり、もりけん塾のもりたけんじ先生 https://github.com/kenmori にメンタリングして頂きました。
+
+# Overview
+
+This is a copy website of [WittyCookie](https://www.wittycookie.ca/), a Vancouver based web development company. Only the front page is coded.
+
+# Install
+
+CSS file is not included in the repo. Execute the following command to create `style.css`. To run the website, open index.html
+
+```
+$ npm run compile:sass
+```
+
+# Mentor
+
+Huge thanks to my mentor Kenji Morita https://github.com/kenmori
