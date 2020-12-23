@@ -9,7 +9,7 @@
 サイトを閲覧するには、index.html をブラウザで開いて下さい。
 
 ```
-$ npm run compile:sass
+npm run compile:sass
 ```
 
 # メンター
@@ -25,7 +25,7 @@ This is a copy website of [WittyCookie](https://www.wittycookie.ca/), a Vancouve
 CSS file is not included in the repo. Execute the following command to create `style.css`. To run the website, open index.html
 
 ```
-$ npm run compile:sass
+npm run compile:sass
 ```
 
 # Mentor
