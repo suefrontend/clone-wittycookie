@@ -4,7 +4,7 @@ This is a copy website of [WittyCookie](https://www.wittycookie.ca/), a Vancouve
 
 # Install
 
-CSS file is not included in the repo. Execute the following command to create style.To run the website, open index.html
+CSS file is not included in the repo. Execute the following command to create `style.css`. To run the website, open index.html
 
 ```
 $ npm run compile:sass
