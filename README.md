@@ -53,7 +53,7 @@ npm install
 
 # Create style.css
 
-CSS file is not included in the repo. Execute the following command to create `style.css`.
+CSS file is not included in the repo. To create `style.css`, execute the following command:
 
 ```
 npm run compile:sass
