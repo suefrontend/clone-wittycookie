@@ -12,6 +12,7 @@
 レポジトリをクローンもしくはダウンロードした後、下記のコマンドを実行し、必要なパッケージをインストールします。
 
 ```
+git clone https://github.com/suefrontend/clone-wittycookie
 npm install
 ```
 
@@ -46,6 +47,7 @@ This is a copy website of [WittyCookie](https://www.wittycookie.ca/), a Vancouve
 After cloning or downloading the project, run the following command to install packages required.
 
 ```
+git clone https://github.com/suefrontend/clone-wittycookie
 npm install
 ```
 
@@ -64,3 +66,5 @@ Open `index.html` to run the website.
 # Mentor
 
 Huge thanks to my mentor Kenji Morita https://github.com/kenmori
+
+![Screenshot](images/screenshot.jpg?raw=true "Screenshot")
