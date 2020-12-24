@@ -16,7 +16,7 @@ git clone https://github.com/suefrontend/clone-wittycookie
 npm install
 ```
 
-# Scss ファイルをコンパイルする
+# CSS ファイルを作成する
 
 初期状態では style.css ファイルが含まれていません。
 下記のコマンドで Scss ファイルをコンパイルし、`style.css` を作成します。
@@ -51,7 +51,7 @@ git clone https://github.com/suefrontend/clone-wittycookie
 npm install
 ```
 
-# Compile Scss to CSS
+# Create style.css
 
 CSS file is not included in the repo. Execute the following command to create `style.css`.
 
