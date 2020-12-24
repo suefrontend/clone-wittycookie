@@ -65,6 +65,6 @@ Open `index.html` to run the website.
 
 # Mentor
 
-Huge thanks to my mentor Kenji Morita https://github.com/kenmori
+Huge thanks to my mentor Kenji Morita: https://github.com/kenmori
 
 ![Screenshot](images/screenshot.jpg?raw=true "Screenshot")
