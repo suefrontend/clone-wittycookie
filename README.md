@@ -2,15 +2,31 @@
 
 カナダのバンクーバーの web 制作エージェンシー [WittyCookie](https://www.wittycookie.ca/) の模写コーディングです。トップページのみのコーディングです。
 
-# インストール方法
+# 必要な環境
+
+- Node.js v10.16.0
+- npm v6.9.0
+
+# パッケージのインストール
+
+レポジトリをクローンもしくはダウンロードした後、下記のコマンドを実行し、必要なパッケージをインストールします。
+
+```
+npm install
+```
+
+# Scss ファイルをコンパイルする
 
 初期状態では style.css ファイルが含まれていません。
-下記のコマンドで Sass ファイルをコンパイルし、style.css を作成します。
-サイトを閲覧するには、index.html をブラウザで開いて下さい。
+下記のコマンドで Scss ファイルをコンパイルし、`style.css` を作成します。
 
 ```
 npm run compile:sass
 ```
+
+# サイトの閲覧
+
+サイトを閲覧するには、index.html をブラウザで開いて下さい。
 
 # メンター
 
@@ -20,13 +36,30 @@ npm run compile:sass
 
 This is a copy website of [WittyCookie](https://www.wittycookie.ca/), a Vancouver based web development company. Only the front page is coded.
 
-# Install
+# Requirements
 
-CSS file is not included in the repo. Execute the following command to create `style.css`. To run the website, open index.html
+- Node.js v10.16.0
+- npm v6.9.0
+
+# Installation
+
+After cloning or downloading the project, run the following command to install packages required.
+
+```
+npm install
+```
+
+# Compile Scss to CSS
+
+CSS file is not included in the repo. Execute the following command to create `style.css`.
 
 ```
 npm run compile:sass
 ```
+
+# Run the Website
+
+Open `index.html` to run the website.
 
 # Mentor
 
