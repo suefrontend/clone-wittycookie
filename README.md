@@ -4,7 +4,7 @@
 
 # 必要な環境
 
-- Node.js v10.16.0
+- Node.js v14.15.3
 - npm v6.9.0
 
 # パッケージのインストール
@@ -39,7 +39,7 @@ This is a copy website of [WittyCookie](https://www.wittycookie.ca/), a Vancouve
 
 # Requirements
 
-- Node.js v10.16.0
+- Node.js v14.15.3
 - npm v6.9.0
 
 # Installation
